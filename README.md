@@ -8,5 +8,6 @@ This JavaScript code implements a dynamic user interface with the following feat
 - **Static Button**: Displays an image and triggers a heart animation.
 - **Heart Animation**: Adds a playful visual effect to the website.
 
-https://github.com/user-attachments/assets/b11a7a5c-090d-45ce-8739-6c70f54f3de0
+
+https://github.com/user-attachments/assets/d4efe491-e17c-4858-9108-63fe7741c799
 

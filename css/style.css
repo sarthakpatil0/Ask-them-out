@@ -1,0 +1,89 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+body {
+  background-color: rgb(255, 170, 170);
+  margin: 0;
+  overflow: hidden;
+  height: 100vh;
+  background: linear-gradient(to bottom, #fefcea, #f1da36); 
+}
+
+button {
+  position: absolute;
+  top: 60%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  height: 4rem;
+  width: 10rem;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 1px 1px 5px black;
+  background-color: #ffaaaa;
+}
+
+#static-btn{
+  top: 60%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  transition: 0.3s;
+}
+
+#static-btn:hover{
+  background-color: #ff7a7a;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+.txt {
+  display: flex;
+  justify-content: center; 
+  align-items: center;    
+  height: 90vh;         
+  margin: 0;
+  font-size: 2rem;
+}
+
+
+
+.heart {
+  position: absolute;
+  top: -5%; /* Start slightly above the viewport */
+  font-size: 24px; /* Adjust heart size */
+  color: red; /* Heart color */
+  animation: fall linear, drift ease-in-out; /* Combine animations */
+}
+
+/* Falling animation */
+@keyframes fall {
+  0% {
+    top: -5%; /* Start slightly above the viewport */
+  }
+  100% {
+    top: 105%; /* End slightly below the viewport */
+  }
+}
+
+/* Drifting (horizontal sway) animation */
+@keyframes drift {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(30px); /* Move slightly to the right */
+  }
+}
+
+
+
+
